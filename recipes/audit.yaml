@@ -1,0 +1,7 @@
+# 审计配方：聚焦攻击检出与声音性曲线
+prove:
+  open_ratio: 1.0
+bench:
+  skills: [0.0, 0.5, 1.0]
+  attack_cases: 30
+  ratios: [1.0, 0.5, 0.25, 0.1, 0.02]

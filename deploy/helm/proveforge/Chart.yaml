@@ -1,0 +1,6 @@
+apiVersion: v2
+name: proveforge
+description: A Helm chart for proveforge, a zero-dependency provable-inference engine (commit/prove/verify) with a weight-hiding Merkle commitment, Fiat-Shamir selective opening, and a CPU-only verifier
+type: application
+version: 0.16.0
+appVersion: "0.16.0"

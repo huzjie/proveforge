@@ -1,0 +1,11 @@
+# 极简：小词表、小语料，秒级跑通冒烟
+model:
+  vocab: 8
+  layers: 2
+  bits: 8
+  ctx: 8
+world:
+  n_prompts: 8
+bench:
+  skills: [0.0, 0.5, 1.0]
+  attack_cases: 6

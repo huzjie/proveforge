@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proveforge"
+version = "0.16.0"
+description = "proveforge: a zero-dependency reference implementation of provable inference for LLMs (Anthropic FlashProve style). It models the whole 'commit -> prove -> verify' pipeline: a weight-hiding Merkle commitment pins a set of (quantized, integer) weights, a prover runs greedy decoding and selectively opens weight rows chosen by a Fiat-Shamir challenge, and a CPU-only verifier checks binding + trace integrity without ever seeing the full weights. A skill-driven audit produces four monotone 0->1 metrics (binding, integrity, fidelity, accept) plus substitution/tampering attack detection and a soundness-vs-open_ratio sweep. Pure Python, zero dependencies."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "proveforge contributors" }]
+keywords = ["provable-inference", "merkle", "fiat-shamir", "commitment", "verifiable", "zero-knowledge", "llm", "audit", "zero-dependency", "python"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.scripts]
+proveforge = "proveforge.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["proveforge*"]

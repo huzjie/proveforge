@@ -1,0 +1,15 @@
+# 完整配方：默认参数 + 透明证明
+model:
+  skill: 0.5
+  vocab: 32
+  layers: 3
+  bits: 8
+  ctx: 12
+world:
+  n_prompts: 24
+prove:
+  open_ratio: 1.0
+bench:
+  skills: [0.0, 0.25, 0.5, 0.75, 1.0]
+  attack_cases: 20
+  ratios: [1.0, 0.5, 0.25, 0.1, 0.02]
